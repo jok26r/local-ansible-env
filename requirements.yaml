@@ -1,0 +1,12 @@
+---
+roles:
+  - src: https://github.com/ansible-community/ansible-consul.git
+    name: ansible-consul
+    scm: git
+    version: master
+
+collections:
+  - name: ansible.utils
+    version: 2.6.1
+  - name: nginxinc.nginx_core
+    version: 0.7.0
