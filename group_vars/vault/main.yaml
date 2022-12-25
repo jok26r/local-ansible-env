@@ -1,0 +1,17 @@
+---
+# consul
+consul_version: 1.14.3
+consul_datacenter: dc1
+consul_group_name: vault
+
+consul_addresses_http: 0.0.0.0
+consul_addresses_dns: 0.0.0.0
+
+consul_bootstrap_expect: true
+consul_node_role: server
+
+consul_zip_url: http://deploy.vms.jk/pkgs/consul_{{ consul_version }}_{{ consul_os }}_{{ consul_architecture }}.zip
+consul_checksum_file_url: http://deploy.vms.jk/pkgs/consul_{{ consul_version }}_SHA256SUMS
+
+consul_acl_enable: true
+consul_acl_default_policy: deny
