@@ -10,3 +10,7 @@
     tags:
       - install_consul
     become: true
+  - role: ansible-vault
+    tags:
+      - install_vault
+    become: true
